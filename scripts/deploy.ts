@@ -22,7 +22,6 @@ const deployContract = async (contractName: string) => {
 	const factory = await ethers.getContractFactory(contractName);
 	const contract = await factory.deploy();
 	await contract.deployed();
-	console.log((contract.provider as any).connection);
 	return { name: contractName, address: contract.address };
 };
 

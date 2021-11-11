@@ -1,8 +1,12 @@
 {
 	"name": "contract-samples",
-	"version": "0.1.002",
+	"version": "0.1.003",
 	"description": "A sample project that can be forked to create a contracts library for use with Node",
 	"main": "lib/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/msherer95/contract-samples.git"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
