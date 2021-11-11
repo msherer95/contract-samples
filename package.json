@@ -1,6 +1,6 @@
 {
 	"name": "contract-samples",
-	"version": "0.1.003",
+	"version": "0.1.004",
 	"description": "A sample project that can be forked to create a contracts library for use with Node",
 	"main": "lib/index.js",
 	"repository": {
