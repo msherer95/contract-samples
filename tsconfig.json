@@ -20,6 +20,6 @@
   },
   "include": ["./scripts", "./contract-types"],
   "exclude": ["<outDir>", "node_modules/**/*", "lib/**/*"],
-  "files": ["./hardhat.config.ts"],
+  "files": ["./hardhat.config.ts", "./index.ts"],
   "compileOnSave": true
 }
