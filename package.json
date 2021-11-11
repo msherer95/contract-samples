@@ -1,0 +1,41 @@
+{
+	"name": "contract-samples",
+	"version": "0.1.001",
+	"description": "A sample project that can be forked to create a contracts library for use with Node",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+		"build": "npx tsc",
+		"compile": "npx hardhat compile",
+		"start-local-node": "npx hardhat node",
+		"local-deploy": "npm run compile && npm run build && NODE_ENV=local npx hardhat run --network localhost lib/scripts/deploy.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@nomiclabs/hardhat-ethers": "^2.0.2",
+		"@nomiclabs/hardhat-waffle": "^2.0.1",
+		"@typechain/ethers-v5": "^8.0.2",
+		"@typechain/hardhat": "^3.0.0",
+		"@types/chai": "^4.2.22",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "^16.11.7",
+		"@typescript-eslint/eslint-plugin": "^5.3.1",
+		"@typescript-eslint/parser": "^5.3.1",
+		"chai": "^4.3.4",
+		"eslint": "^8.2.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.25.3",
+		"ethereum-waffle": "^3.4.0",
+		"ethers": "^5.5.1",
+		"hardhat": "^2.6.8",
+		"ts-node": "^10.4.0",
+		"ts-node-dev": "^1.1.8",
+		"typechain": "^6.0.2",
+		"typescript": "^4.4.4"
+	},
+	"dependencies": {
+		"dotenv": "^10.0.0"
+	}
+}
